@@ -61,7 +61,7 @@
 					<p>You can create twibbon easy and fast. You don't need create your twibbon with photoshop or image editor. With drag your photo and automatically system will create twibbon result with fast. Don't forget after drag photo you can download with button download below.</p>
 					<button class="btn btn-shadow btn-light" onclick="download()"><h6><i class="icon-arrow-down"></i> Download</h6></button>
 					<button class="btn btn-shadow btn-light" onclick="remake()"><h6><i class="icon-refresh"></i> Remake</h6></button>
-					<button class="btn btn-shadow btn-light" onclick="changeColor()"><h6><i class="icon-settings"></i> Color</h6></button>
+					<!-- <button class="btn btn-shadow btn-light" onclick="changeColor()"><h6><i class="icon-settings"></i> Color</h6></button> -->
 					<hr>
 				</div>
 				<div class="col-md-6 col-sm-12 justify-content-end">
@@ -103,9 +103,9 @@
 			redraw();
 		}
 
-		function changeColor() {
-			image(img, mouseX, mouseY, img.width, img.height);
-		}
+		// function changeColor() {
+		// 	image(img, mouseX, mouseY, img.width, img.height);
+		// }
 
 		function download() {
 			saveCanvas("Twibbon MI", 'jpg');
