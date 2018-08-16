@@ -21,6 +21,7 @@
 		.btn-shadow {
 			    box-shadow: 0px 5px 10px #dcdcdc4d !important;
     			border-radius: 6px;
+    			margin-bottom: 20px;
 		}
 
 		.display-4 {
@@ -59,14 +60,21 @@
 				<div class="col-md-6 col-sm-12">
 					<h6 class="display-4">MAKE TWIBBON <small>EASY AND FAST</small></h6>
 					<p>You can create twibbon easy and fast. You don't need create your twibbon with photoshop or image editor. With drag your photo and automatically system will create twibbon result with fast. Don't forget after drag photo you can download with button download below.</p>
-					<button class="btn btn-shadow btn-light" onclick="download()"><h6><i class="icon-arrow-down"></i> Download</h6></button>
-					<button class="btn btn-shadow btn-light" onclick="remake()"><h6><i class="icon-refresh"></i> Remake</h6></button>
+					<button class="btn d-none d-sm-block btn-shadow btn-light" onclick="download()"><h6><i class="icon-arrow-down"></i> Download</h6></button>
+					<button class="btn d-none d-sm-block btn-shadow btn-light" onclick="remake()"><h6><i class="icon-refresh"></i> Remake</h6></button>
 					<!-- <button class="btn btn-shadow btn-light" onclick="changeColor()"><h6><i class="icon-settings"></i> Color</h6></button> -->
 					<hr>
 				</div>
-				<div class="col-md-6 col-sm-12 justify-content-end">
+				<div class="col-md-6 col-sm-12 justify-content-end" style="margin-bottom:70px">
 						<button class="btn btn-light" id="inputbtn"><h6><i class="icon-cloud-upload"></i> Upload Your Photos</h6></button>
 						<div id="canvas"></div>
+				</div>
+				<div class="col-md-12 d-block d-sm-none" style="position: fixed; bottom: 5px; left:30px">
+					<div class="row">
+						<button class="btn btn-shadow btn-light" style="margin-right:5px" onclick="download()"><h6><i class="icon-arrow-down"></i> Download</h6></button>
+						<button class="btn btn-shadow btn-light" style="margin-left:5px;" onclick="remake()"><h6><i class="icon-refresh"></i> Remake</h6></button>
+					</div>
+					
 				</div>
 			</div>
 		</div>
